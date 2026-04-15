@@ -1,0 +1,9 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Single room image">
+  <rect width="1200" height="800" fill="#f4efe8"/>
+  <rect x="100" y="300" width="760" height="260" rx="22" fill="#9bb0bf"/>
+  <rect x="140" y="340" width="220" height="90" rx="14" fill="#f8f7f2"/>
+  <rect x="390" y="340" width="220" height="90" rx="14" fill="#f8f7f2"/>
+  <rect x="640" y="340" width="180" height="90" rx="14" fill="#f8f7f2"/>
+  <rect x="900" y="260" width="180" height="300" fill="#d8c29d"/>
+  <text x="70" y="120" font-family="Georgia, serif" font-size="62" fill="#273b4a">Single Room</text>
+</svg>

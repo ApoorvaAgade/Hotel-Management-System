@@ -1,0 +1,389 @@
+:root {
+  --bg: #f2ece2;
+  --card: #fffdf9;
+  --text: #1d2737;
+  --muted: #5f6b7b;
+  --accent: #1b7f78;
+  --accent-2: #0e5954;
+  --brand-dark: #132333;
+  --danger: #9f1239;
+  --ok: #166534;
+  --warn-bg: #fff4e6;
+  --ok-bg: #ecfdf3;
+  --border: #e7dbc9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", "Trebuchet MS", sans-serif;
+  background: radial-gradient(circle at 8% 2%, #fff4df 0%, #f1ece3 45%, #ebe6db 100%);
+  color: var(--text);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  border-bottom: 1px solid #ded2c2;
+  background: rgba(255, 253, 248, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.app-brand {
+  font-size: 1.85rem;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+.app-nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.app-nav a,
+.link-button,
+.button-link {
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 26px auto;
+  padding: 0 18px 36px;
+}
+
+.stack-lg {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 14px 32px rgba(51, 37, 21, 0.08);
+}
+
+.small-card {
+  max-width: 520px;
+  margin: 32px auto;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  color: var(--brand-dark);
+  letter-spacing: 0.2px;
+}
+
+.landing-hero {
+  min-height: 240px;
+  border-radius: 22px;
+  overflow: hidden;
+  background:
+    linear-gradient(120deg, rgba(18, 37, 55, 0.82), rgba(33, 75, 88, 0.66)),
+    url('/images/hotels/hotel-sea-breeze.svg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 20px 38px rgba(38, 28, 16, 0.2);
+}
+
+.landing-overlay {
+  padding: 24px;
+  color: #f3f8f8;
+  max-width: 640px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 0.74rem;
+  opacity: 0.9;
+}
+
+.landing-overlay h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  margin: 0;
+  color: #ddedf0;
+}
+
+.search-card {
+  margin-top: -36px;
+  position: relative;
+  z-index: 2;
+}
+
+.form-grid,
+.filter-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.filter-grid {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c9c1b4;
+  border-radius: 8px;
+  background: #fff;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+
+button:hover {
+  background: var(--accent-2);
+}
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 12px;
+}
+
+.hotel-grid,
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.showcase-card,
+.room-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(39, 29, 20, 0.08);
+}
+
+.showcase-image,
+.room-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.showcase-content,
+.room-content {
+  padding: 14px;
+}
+
+.price-label {
+  font-size: 1.06rem;
+  font-weight: 800;
+  color: #173b58;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 12px;
+}
+
+.chip {
+  border: 1px solid #d7e4e6;
+  border-radius: 999px;
+  padding: 4px 9px;
+  font-size: 0.78rem;
+  color: #365b66;
+  background: #f4fbfc;
+}
+
+.action-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  border-radius: 9px;
+  border: 1px solid var(--accent-2);
+  background: #ebfbf8;
+  color: var(--accent-2);
+  padding: 4px 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.action-link:hover {
+  background: #dff6f2;
+}
+
+.hotel-banner {
+  padding: 0;
+  overflow: hidden;
+}
+
+.hotel-banner-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.hotel-banner-content {
+  padding: 16px;
+}
+
+.room-detail-wrap {
+  padding: 0;
+  overflow: hidden;
+}
+
+.room-detail-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.room-detail-content {
+  padding: 16px;
+}
+
+.book-link {
+  margin-top: 8px;
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+.book-link:hover {
+  background: var(--accent-2);
+}
+
+.item-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  background: #fff;
+}
+
+.item-card.ok {
+  background: var(--ok-bg);
+}
+
+.item-card.warn {
+  background: var(--warn-bg);
+}
+
+.inline-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.action-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid var(--accent-2);
+  background: #f3fffd;
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 10px;
+}
+
+.action-button:hover {
+  background: #def7f3;
+}
+
+.error-msg {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.page-state {
+  color: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.status-green {
+  color: var(--ok);
+  font-weight: 700;
+}
+
+.status-red {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.stat {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .app-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .landing-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .search-card {
+    margin-top: -18px;
+  }
+}

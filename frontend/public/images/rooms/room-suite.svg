@@ -1,0 +1,9 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Suite room image">
+  <rect width="1200" height="800" fill="#ebf0f2"/>
+  <rect x="80" y="280" width="1040" height="330" rx="24" fill="#4e6473"/>
+  <rect x="140" y="350" width="300" height="120" rx="18" fill="#f7f8f5"/>
+  <rect x="470" y="350" width="300" height="120" rx="18" fill="#f7f8f5"/>
+  <rect x="800" y="350" width="260" height="120" rx="18" fill="#f7f8f5"/>
+  <circle cx="1020" cy="190" r="70" fill="#d2ad66"/>
+  <text x="70" y="120" font-family="Georgia, serif" font-size="62" fill="#273b4a">Suite</text>
+</svg>

@@ -1,0 +1,13 @@
+DELETE /api/bookings/{bookingId}
+GET /api/auth/me
+GET /api/auth/users
+GET /api/bookings/my
+GET /api/rooms/search
+GET,POST /api/bookings
+GET,POST /api/hotels
+GET,POST /api/hotels/{hotelId}/rooms
+GET,PUT,DELETE /api/hotels/{hotelId}
+GET,PUT,DELETE /api/hotels/{hotelId}/rooms/{roomId}
+POST /api/auth/login
+POST /api/auth/logout
+POST /api/auth/register

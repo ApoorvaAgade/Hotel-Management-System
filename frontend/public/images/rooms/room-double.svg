@@ -1,0 +1,9 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Double room image">
+  <rect width="1200" height="800" fill="#ebe6df"/>
+  <rect x="70" y="280" width="920" height="300" rx="22" fill="#a09086"/>
+  <rect x="130" y="340" width="230" height="100" rx="16" fill="#f4efe8"/>
+  <rect x="390" y="340" width="230" height="100" rx="16" fill="#f4efe8"/>
+  <rect x="650" y="340" width="230" height="100" rx="16" fill="#f4efe8"/>
+  <rect x="1020" y="240" width="120" height="360" fill="#d8c8b4"/>
+  <text x="70" y="120" font-family="Georgia, serif" font-size="62" fill="#273b4a">Double Room</text>
+</svg>

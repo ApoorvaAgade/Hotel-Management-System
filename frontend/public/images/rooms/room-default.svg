@@ -1,0 +1,6 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Room image">
+  <rect width="1200" height="800" fill="#f1ece4"/>
+  <rect x="120" y="300" width="880" height="260" rx="22" fill="#8da0ad"/>
+  <rect x="170" y="350" width="760" height="120" rx="16" fill="#f7f6f2"/>
+  <text x="80" y="120" font-family="Georgia, serif" font-size="62" fill="#273b4a">Room</text>
+</svg>
