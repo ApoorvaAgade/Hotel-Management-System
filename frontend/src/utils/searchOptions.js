@@ -1,0 +1,43 @@
+export const locationOptions = [
+  'Ahmedabad',
+  'Bengaluru',
+  'Bhopal',
+  'Bhubaneswar',
+  'Chandigarh',
+  'Chennai',
+  'Coimbatore',
+  'Dehradun',
+  'Delhi',
+  'Goa',
+  'Gurugram',
+  'Guwahati',
+  'Hyderabad',
+  'Indore',
+  'Jaipur',
+  'Kochi',
+  'Kolkata',
+  'Lucknow',
+  'Mumbai',
+  'Mysuru',
+  'Nagpur',
+  'Nashik',
+  'Noida',
+  'Patna',
+  'Pune',
+  'Raipur',
+  'Ranchi',
+  'Surat',
+  'Thiruvananthapuram',
+  'Varanasi',
+  'Vijayawada',
+  'Visakhapatnam'
+];
+
+export const amenityOptions = [
+  { label: 'Free Wi-Fi', value: 'wifi' },
+  { label: 'Air Conditioning', value: 'air conditioning' },
+  { label: 'Parking', value: 'parking' },
+  { label: 'Room Service', value: 'room service' },
+  { label: 'Swimming Pool', value: 'pool' },
+  { label: 'Gym', value: 'gym' }
+];
