@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { getHotelsApi } from '../api/hotelApi';
 import { searchRoomsApi } from '../api/roomApi';
 import { getHotelImage, getRoomImage } from '../utils/imageCatalog';
+import { amenityOptions, locationOptions } from '../utils/searchOptions';
 
 function HotelSearchPage() {
   const [hotels, setHotels] = useState([]);
@@ -70,12 +71,22 @@ function HotelSearchPage() {
 
       <article className="card search-card">
         <form className="filter-grid" onSubmit={onSearch}>
-          <input placeholder="Location" value={filters.location} onChange={(e) => setFilters((p) => ({ ...p, location: e.target.value }))} />
+          <select value={filters.location} onChange={(e) => setFilters((p) => ({ ...p, location: e.target.value }))}>
+            <option value="">All cities</option>
+            {locationOptions.map((city) => (
+              <option key={city} value={city}>{city}</option>
+            ))}
+          </select>
           <input type="date" value={filters.checkIn} onChange={(e) => setFilters((p) => ({ ...p, checkIn: e.target.value }))} />
           <input type="date" value={filters.checkOut} onChange={(e) => setFilters((p) => ({ ...p, checkOut: e.target.value }))} />
           <input type="number" min="0" step="0.01" placeholder="Min price" value={filters.minPrice} onChange={(e) => setFilters((p) => ({ ...p, minPrice: e.target.value }))} />
           <input type="number" min="0" step="0.01" placeholder="Max price" value={filters.maxPrice} onChange={(e) => setFilters((p) => ({ ...p, maxPrice: e.target.value }))} />
-          <input placeholder="Amenity" value={filters.amenity} onChange={(e) => setFilters((p) => ({ ...p, amenity: e.target.value }))} />
+          <select value={filters.amenity} onChange={(e) => setFilters((p) => ({ ...p, amenity: e.target.value }))}>
+            <option value="">All amenities</option>
+            {amenityOptions.map((amenity) => (
+              <option key={amenity.value} value={amenity.value}>{amenity.label}</option>
+            ))}
+          </select>
           <select value={filters.category} onChange={(e) => setFilters((p) => ({ ...p, category: e.target.value }))}>
             <option value="">All categories</option>
             <option value="SINGLE">Single</option>
