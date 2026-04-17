@@ -42,7 +42,8 @@ function RegisterPage() {
         />
         <input
           type="password"
-          placeholder="Password (min 8 chars)"
+          placeholder="Password (8-100 chars)"
+          maxLength={100}
           minLength={8}
           value={form.password}
           onChange={(e) => setForm((p) => ({ ...p, password: e.target.value }))}
