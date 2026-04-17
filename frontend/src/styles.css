@@ -309,6 +309,10 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.inline-actions button {
+  width: auto;
+}
+
 .action-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
